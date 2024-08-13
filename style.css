@@ -1,0 +1,153 @@
+/*Global styles*/
+html, 
+body { 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+} 
+body{
+    display: flex;
+    flex-direction: column;
+}
+/*Header styles*/
+.header-content
+.main-content
+.footer-content{
+   width:80%;
+   margin:auto;
+}
+header{
+    background: fixed;
+    color: rgb(51, 0, 255);
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header .logo{
+    display: inline-block;
+}
+header .logo h1{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+} 
+header nav{
+    display: inline-block;
+    /*float: right; */
+}
+header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+    margin-left: 0%;
+}
+header nav ul li a{
+    color: seashell;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+header nav ul li a :hover {
+     color: gold;
+}
+/*main styles*/
+main{
+    display: flex;
+    flex: 1;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+.sidebar{
+    width: 25%;
+    padding: 20px;
+    background: seashell;
+    box-shadow:0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.blog-post{
+    margin-bottom: 20px;
+}
+.blog-post img{
+    max-width: 100%;
+    height: auto;
+}
+/*footer styles*/
+footer{
+    background: #333;
+    color: seashell;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: relative;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-content div{
+    flex: 1;
+    margin: 0 20px;
+}
+.footer-content ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-content ul li{
+    display: inline;
+    margin-left: auto;
+}
+.footer-content ul li a{
+    color: seashell;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-content ul li a:hover{
+    color: gold;
+}
+/*contact form styles*/
+.contact-selection{
+    width: 50px; /* Set the width of the contact form*/
+    max-width: 600px; /*Ensure the form doesn't get too wide on large*/
+    margin: auto; /*Center the form*/
+    background: white;
+    padding: 20px;
+    box-shadow: 0 20px 4px rgba(0, 0, 0, 0.1);
+}
+.contact-selection h2{
+    text-align: center;
+}
+.contact-selection form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-selection form label{
+    margin-bottom: 10px;
+}
+.contact-selection form input[type="text"]
+.contact-selection form input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom:  20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /*Include padding and border in the element's total width and height*/
+}
+.contact-selection form input[type="submit"]{
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    align-self: center; /*Center the submit button*/
+}
+.contact-selection form input[type="submit"]:hover{
+    background: #555;
+}
